@@ -1,0 +1,44 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+}
+.box{
+  position:relative;
+  top:100px;
+  left:100px;
+  width:50px;
+  height:50px;
+  background:#2b3fa5;}
+
+@keyframes boxmove{
+  0%{
+    left:100px;
+     background:#2b3fa5}
+  
+  25%{
+    background:#a3dd7c;
+    }
+  50%{
+    background:#e5d98e;
+    transform:scale(2.25)rotate(-350deg);
+    }
+  75%{
+    background:#9584e0;
+  }
+  100%{
+    left:300px;
+     background:#e55991;
+  }
+}
+.box{
+  position:relative;
+ top:100px;
+  left:100px;
+  width:50px;
+  height:50px;
+  background:#ad61ce;
+  animation-name:boxmove;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
